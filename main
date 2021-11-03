@@ -254,7 +254,7 @@ jprev()
 	WinGet, style, Style, ahk_class Chrome_WidgetWin_0
 
 	if !(style & 0x10000000)
-		Send, {Media_Previous}
+		Send, {Media_Prev}
 	else if WinActive("ahk_class Chrome_WidgetWin_0")
 		Send, ^{Left}
 	else
